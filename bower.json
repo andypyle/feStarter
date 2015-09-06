@@ -1,0 +1,23 @@
+{
+  "name": "frontEndStarterKit",
+  "version": "0.0.0",
+  "homepage": "https://github.com/andypyle/feStarter",
+  "authors": [
+    "Andrew Pyle <andy.pyle@gmail.com>"
+  ],
+  "description": "My personal Front-End starter kit.",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "./src/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "velocity": "~1.2.2"
+  }
+}
