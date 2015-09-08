@@ -1,13 +1,13 @@
 // ## Imports
 
-@import normalize
-@import vendor/icons
+@import variables/_config
 @import mixins/_mixins.utility
 @import mixins/_mixins.flex
 @import mixins/_mixins.buttons
 @import mixins/_mixins.responsive
-@import variables/_colors
-@import variables/_type
+@import foundation
+@import vendor/icons
+
 
 // ## Globals		:	*, html, body
 
@@ -18,20 +18,8 @@ html,
 body
 	height: 100%
 
-html
-	font-size: $fontSize
-
-	+medium
-		font-size: $fontSize * 1.25
-
 body
-	+flex
-	+flexCol
-	flex: 1
 	min-height: 100%
-
-	font-family: $copyFont
-	-webkit-font-smoothing: antialiased
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004)
 
-	color: #333
+	color: $dkGrey

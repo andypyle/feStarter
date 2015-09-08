@@ -1,14 +1,17 @@
 // ## Flex Box mixins
 
-=flex
+=flex($direction: null)
 	display: flex
+	@if($direction)
+		@if($direction == row)
+			flex-direction: row
+		@if($direction == col)
+			flex-direction: column
+		@if($direction == center)
+			justify-content: center
+			align-items: center
+	@else
 
-=flexCol
-	flex-direction: column
-
-=flexRow
-	flex-direction: row
-
-=flexCenter
-	justify-content: center
-	align-items: center
+=col($cols)
+	flex-shrink: 0
+	width: 100% / $columns * $cols
