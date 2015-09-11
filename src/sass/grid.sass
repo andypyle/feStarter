@@ -1,0 +1,12 @@
+// OPTIONAL GRID CLASSES
+.row
+	+flex(row)
+	+wrap
+	flex-shrink: 0
+
+.col
+	padding: .5em
+
+@for $i from 1 through $columns
+  .col#{$i}
+  	+col($i)
